@@ -1,0 +1,7 @@
+{% extends 'emails/layout.html.twig' %}
+{% block title %}Top {{ rank }} — {{ score }} pts !{% endblock %}
+{% block content %}
+    <h2>Bravo {{ username }} !</h2>
+    <p>Avec <strong>{{ score }} points</strong> sur la ville <em>{{ cityName }}</em>,
+       vous entrez dans le top {{ rank }}.</p>
+{% endblock %}

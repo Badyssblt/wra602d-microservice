@@ -1,0 +1,7 @@
+{% extends 'emails/layout.html.twig' %}
+{% block title %}Bienvenue, {{ username }} !{% endblock %}
+{% block content %}
+    <h2>Bienvenue {{ username }} !</h2>
+    <p>Votre compte est prêt. Construisez votre première ville dès maintenant.</p>
+    <p><a href="{{ frontendUrl|default('http://localhost:5173') }}" style="color: #2b6cb0;">Lancer le jeu →</a></p>
+{% endblock %}
